@@ -12,7 +12,11 @@
   },
   "dependencies": {
     "element-ui": "^2.14.1",
+    "node-sass": "^5.0.0",
+    "qs.js": "^0.1.12",
+    "sass-loader": "^10.1.0",
     "vue": "^2.5.2",
+    "vue-axios": "^3.2.0",
     "vue-router": "^3.0.1"
   },
   "devDependencies": {

@@ -20,16 +20,16 @@
           </el-submenu>
           <el-submenu index="2">
             <template slot="title"><i class="el-icon-caret-right"></i>内容管理</template>
-            <e1-menu-item-group>
+            <el-menu-item-group>
               <el-menu-item index="2-1">分类管理</el-menu-item>
               <el-menu-item index="2-2">内容列表</el-menu-item>
-            </e1-menu-item-group>
+            </el-menu-item-group>
           </el-submenu>
           <el-submenu index="3">
             <template slot="title"><i class="el-icon-caret-right"></i>系统管理</template>
-            <e1-menu-item-group>
+            <el-menu-item-group>
               <el-menu-item index="3-1">系统设置</el-menu-item>
-            </e1-menu-item-group>
+            </el-menu-item-group>
           </el-submenu>
         </el-menu>
       </el-aside>
@@ -55,11 +55,11 @@
 
 <script>
   export default {
-    name: "main"
-  }
+    name: 'Main'
+  };
 </script>
 
-<style scoped lang="scss">
+<style scoped>
   .el-header {
     background-color: #4abaf8;
     color: #333;
