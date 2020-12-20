@@ -6,7 +6,9 @@ import router from './router';
 import ElementUI from 'element-ui';
 import 'element-ui/lib/theme-chalk/index.css';
 import axios from 'axios';
+import VueResource from 'vue-resource';
 
+Vue.use(VueResource);
 Vue.prototype.$axios = axios; // 全局注册，使用方法为:this.$axios
 Vue.prototype.qs = this.qs; // 全局注册，使用方法为:this.qs
 

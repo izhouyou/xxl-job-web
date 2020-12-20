@@ -36,9 +36,9 @@
       <el-container>
         <el-header style="text-align: right; font-size: 12px">
           <el-dropdown>
-            <i class="el-icon-setting" style="margin-right:15px"></i>
+            <i class="el-icon-setting" style="margin-right:15px;text-align: center; color: aliceblue">个人信息</i>
             <el-dropdown-menu slot="dropdown">
-              <el-dropdown-item>个人信息</el-dropdown-item>
+              <el-dropdown-item @click.native="vueTest">个人信息</el-dropdown-item>
               <el-dropdown-item>退出登录</el-dropdown-item>
             </el-dropdown-menu>
           </el-dropdown>
@@ -55,7 +55,14 @@
 
 <script>
   export default {
-    name: 'Main'
+    name: 'Main',
+    methods: {
+      vueTest () {
+        // 为表单绑定验证功能
+          // 使用 vue-router路由到指定页面，该方式称之为编程式导航
+        this.$router.push('/test');
+      }
+    }
   };
 </script>
 
@@ -65,7 +72,10 @@
     color: #333;
     line-height: 60px;
   }
-
+  .el-dropdown-item {
+    font-size: 12px;
+    color: aqua;
+  }
   .el-aside {
     color: #333;
   }

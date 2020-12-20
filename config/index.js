@@ -10,8 +10,16 @@ module.exports = {
     // Paths
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
-    proxyTable: {},
-
+    proxyTable: {
+      "/activiti": {
+        target: "http://localhost:8001",// 要访问的接口域名
+        ws: true,// 是否启用websockets
+        changeOrigin: true, //开启跨域
+        pathRewrite: {
+          '^/activiti': '' //这里理解成用'/api'代替target里面的地址,比如我要调用'http://40.00.100.100:3002/user/add'，直接写'/api/user/add'即可
+        }
+      }
+    },
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
     port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined

@@ -9,11 +9,16 @@ import Profile from '@/components/user/Profile';
 //
 // 404
 import NotFound from '@/components/NotFound';
+import Test from '@/components/test/Test';
 
 Vue.use(Router);
 
 export default new Router({
   routes: [
+    {
+      path: '/test',
+      component: Test
+    },
     {
       path: '/',
       name: '登录',
